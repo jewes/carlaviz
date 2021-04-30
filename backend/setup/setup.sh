@@ -164,7 +164,6 @@ rm -Rf \
 
 log "Retrieving Recast & Detour"
 
-# git clone https://github.com/recastnavigation/recastnavigation.git ${RECAST_BASENAME}-source
 git clone git://github.com/carla-simulator/recastnavigation.git ${RECAST_BASENAME}-source
 
 pushd ${RECAST_BASENAME}-source >/dev/null
