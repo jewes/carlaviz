@@ -113,7 +113,7 @@ rm -Rf \
 
 log "Retrieving rpclib."
 
-git clone -b ${RPCLIB_PATCH} https://github.com/carla-simulator/rpclib.git ${RPCLIB_BASENAME}-source
+git clone -b ${RPCLIB_PATCH} git://github.com/carla-simulator/rpclib.git ${RPCLIB_BASENAME}-source
 
 log "Building rpclib with libstdc++."
 
@@ -165,7 +165,7 @@ rm -Rf \
 log "Retrieving Recast & Detour"
 
 # git clone https://github.com/recastnavigation/recastnavigation.git ${RECAST_BASENAME}-source
-git clone https://github.com/carla-simulator/recastnavigation.git ${RECAST_BASENAME}-source
+git clone git://github.com/carla-simulator/recastnavigation.git ${RECAST_BASENAME}-source
 
 pushd ${RECAST_BASENAME}-source >/dev/null
 
